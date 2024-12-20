@@ -10,9 +10,6 @@ async function main() {
     try {
         await auth.connect();
         
-        // Register a new user
-        const registration = await auth.registerUser('username', 'password');
-        
         // Authenticate a user
         const authentication = await auth.auth('username', 'password');
         
